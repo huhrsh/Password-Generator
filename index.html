@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Password Generator
+        </title>
+        <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/501910dff8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- creating the outermost div -->
+        <div class="outer-div">
+            <!-- creating the div for the 'password Generator' text  -->
+            <div class="password-generator-text animate__animated animate__backInDown">
+                <p>Password Generator</p>
+                
+            </div>
+            <!-- harshhh -->
+            <div class="upper-div">
+                <p id="final-pass" class="animate__animated">P4$5W0rD!</p>
+                <p class="muted">
+                    <!-- Placeholder text to demonstrate some  -->
+                    <!-- <a href="#" data-bs-toggle="tooltip" data-bs-title="Default tooltip">inline links</a><a href="#" data-bs-toggle="tooltip" data-bs-title="Another tooltip">real text</a><a href="#" data-bs-toggle="tooltip" data-bs-title="Another one here too">these tooltips on links</a></p> -->
+                <span id="copy-button" > <i class="fa-regular fa-clipboard" style="color: #a3ff11;" ></i></span>
+                <!-- <i class="fa-light fa-copy"></i> -->
+            </div>
+                        
+            <div class="lower-div">
+                <form action="" method="post">
+                    <!-- <label for="slide-bar">Character length</label> -->
+                    <div class="charlen">
+                        <div><span class="character-length" >Character Length</span></div>
+                        <div id="sbv"><span class="slide-bar-value">0</span></div>
+                    </div>
+                    <input type="range" id="slide-bar" min="8" max="20" value="8">
+                    <div class="checkboxes">
+                        <div><input type="checkbox" class="checkbox" id="c1"><label for="c1">Include uppercase characters</label></div>  
+                        <div><input type="checkbox" class="checkbox" id="c2"><label for="c2">Include lowercase characters</label></div>
+                        <div><input type="checkbox" class="checkbox" id="c3"><label for="c3">Include numbers</label></div>
+                        <div><input type="checkbox" class="checkbox" id="c4"><label for="c4">Include symbols</label></div>
+                    </div>
+
+                    <div class="strength-box">
+                        <div class="strength-label">Strength</div>
+                        <div class="strength-rating">
+                        <span class="strength-rating-text">Strength</span>
+                        <div class="strength-rating-bars">
+                            <div class="bar animate__animated"></div>
+                            <div class="bar animate__animated"></div>
+                            <div class="bar animate__animated"></div>
+                            <div class="bar animate__animated"></div>
+                        </div>
+                        </div>
+                    </div>
+                    
+                
+                    <div class="generate-button">
+                        <button class="generate-btn">
+                            <!-- Generate -&gt; -->
+                            Generate 
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>
